@@ -8,25 +8,25 @@ const teamMembers = [
     name: "Sarah Chen",
     role: "Founder & CEO",
     bio: "Former Netflix executive with a passion for connecting audiences with stories that matter.",
-    image: "/src/assets/teamMember0.jpg"
+    image: "/teamMember0.jpg"
   },
   {
     name: "Marcus Johnson",
     role: "Chief Technology Officer",
     bio: "Ex-Google engineer who believes in building technology that enhances the movie experience, not distracts from it.",
-    image: "/src/assets/teamMember1.jpg"
+    image: "/teamMember1.jpg"
   },
   {
     name: "Priya Sharma",
     role: "Head of Content",
     bio: "Film critic turned curator with an encyclopedic knowledge of cinema from around the world.",
-    image: "/src/assets/teamMember2.jpg"
+    image: "/teamMember2.jpg"
   },
   {
     name: "CINE.AI",
     role: "Recommendation Engine",
     bio: "Our proprietary AI that analyzes viewing patterns and critic reviews to suggest your next favorite film.",
-    image: "/src/assets/teamMember3.jpg"
+    image: "/teamMember3.jpg"
   }
 ];
 
@@ -39,10 +39,10 @@ const testimonials = [
 
 // Tech stack with logos
 const techStack = [
-  { name: "React", logo: "/src/assets/react_logo.png" },
-  { name: "JavaScript", logo: "/src/assets/js_logo.png" },
-  { name: "Tailwind CSS", logo: "/src/assets/tailwindCss_logo.webp" },
-  { name: "HTML", logo: "/src/assets/html_logo.png" }
+  { name: "React", logo: "/react_logo.png" },
+  { name: "JavaScript", logo: "/js_logo.png" },
+  { name: "Tailwind CSS", logo: "/tailwindCss_logo.webp" },
+  { name: "HTML", logo: "/html_logo.png" }
 ];
 
 // Stats for the mission section
@@ -54,14 +54,14 @@ const stats = [
 
 // Sample movie posters (replace with your actual image paths)
 const samplePosters = [
-  "/src/assets/bg0.jpg",
-  "/src/assets/bg1.jpg",
-  "/src/assets/bg2.jpeg",
-  "/src/assets/bg3.jpg",
-  "/src/assets/bg2.jpeg",
-  "/src/assets/bg2.jpeg",
-  "/src/assets/bg2.jpeg",
-  "/src/assets/bg2.jpeg",
+  "/bg0.jpg",
+  "/bg1.jpg",
+  "/bg2.jpeg",
+  "/bg3.jpg",
+  "/bg2.jpeg",
+  "/bg2.jpeg",
+  "/bg2.jpeg",
+  "/bg2.jpeg",
 ];
 
 const AboutUs = () => {

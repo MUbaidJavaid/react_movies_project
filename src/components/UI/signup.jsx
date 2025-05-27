@@ -29,7 +29,7 @@ const SignUp = () => {
       <section className="relative h-[100vh]">
         {/* Background Image */}
         <img
-          src="/src/assets/login2.jpg"
+          src="/login2.jpg"
           alt="Sign Up Background"
           className="w-full h-full object-cover"
           loading="eager"

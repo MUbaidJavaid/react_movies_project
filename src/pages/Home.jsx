@@ -99,7 +99,7 @@ return (
         <section className="relative h-96 md:h-128 w-full overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-10">
                 <img 
-                    src="/src/assets/bg6.webp" 
+                    src="/bg6.webp" 
                     alt="Featured movie banner" 
                     className="w-full h-full object-cover"
                     loading="lazy"

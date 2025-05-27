@@ -7,17 +7,17 @@ import { Bottom } from '../components/UI/bottum';
 const TRENDING_MOVIES = [
   { 
     id: 1, 
-    backdrop: "/src/assets/bg0.jpg",
+    backdrop: "/bg0.jpg",
     title: "Inception"
   },
   { 
     id: 2, 
-    backdrop: "/src/assets/bg1.jpg",
+    backdrop: "/bg1.jpg",
     title: "Interstellar"
   },
   { 
     id: 3, 
-    backdrop: "/src/assets/bg2.jpeg",
+    backdrop: "/bg2.jpeg",
     title: "The Dark Knight"
   }
 ];
@@ -28,21 +28,21 @@ const TESTIMONIALS = [
     name: "Sarah Chen ",
     role: "Premium Subscriber",
     quote: "Movies Mod completely replaced my other streaming services. The AI recommendations are spot on!",
-    avatar: "/src/assets/teamMember0.jpg"
+    avatar: "/teamMember0.jpg"
   },
   {
     id: 2,
     name: "Michael Johnson ",
     role: "Family Plan User",
     quote: "The family plan is perfect for us. Each person gets their own profile with tailored recommendations.",
-    avatar: "/src/assets/teamMember1.jpg"
+    avatar: "/teamMember1.jpg"
   },
   {
     id: 3,
     name: "Priya Sharma",
     role: "Movie Enthusiast",
     quote: "Offline downloads changed how I watch movies during travel. The quality is exceptional.",
-    avatar: "/src/assets/teamMember2.jpg"
+    avatar: "/teamMember2.jpg"
   }
 ];
 
@@ -51,28 +51,28 @@ const SAMPLE_MOVIES = [
   {
     id: "tt1375666",
     title: "Inception",
-    poster: "/src/assets/movies0.jpg",
+    poster: "/movies0.jpg",
     year: "2010",
     rating: "8.8"
   },
   {
     id: "tt0816692",
     title: "Interstellar",
-    poster: "/src/assets/movies1.jpg",
+    poster: "/movies1.jpg",
     year: "2014",
     rating: "8.6"
   },
   {
     id: "tt7286456",
     title: "Joker",
-    poster: "/src/assets/movies2.jpg",
+    poster: "/movies2.jpg",
     year: "2019",
     rating: "8.4"
   },
   {
     id: "tt1853728",
     title: "Django Unchained",
-    poster: "/src/assets/movies3.jpg",
+    poster: "/movies3.jpg",
     year: "2012",
     rating: "8.4"
   }
