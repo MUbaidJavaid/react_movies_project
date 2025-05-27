@@ -87,9 +87,9 @@ const Header = ({darkMode ,setDarkMode , movies,navItems , searchTerm ,setSearch
                     }`}
                     aria-label="Search movies"
                   />
-                  <Search size={16} className="absolute left-2 top-1/2 transform -translate-y-1/2" />
+                  <Search size={16} className="absolute left-2 top-1/2 -translate-y-1/4" />
                 </div>
-                
+
                 {/* Watchlist button */}
                 <button 
                   onClick={() => setIsWatchlistOpen(true)}
