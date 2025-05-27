@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body::-webkit-scrollbar {
+        width: 16px;
+      }
+  
+      body::-webkit-scrollbar-track {
+        background: #f3f4f6; /* Light mode scrollbar track */
+      }
+  
+      body::-webkit-scrollbar-thumb {
+        background-color: #1f2a38; /* Teal scrollbar thumb */
+        border-radius: 10px;
+        border: 3px solid #f3f4f6; /* Light mode scrollbar track */
+      }
+  
+      .dark body::-webkit-scrollbar-track {
+        background: #1f2a38; /* Dark mode scrollbar track */
+      }
+  
+      .dark body::-webkit-scrollbar-thumb {
+        border: 3px solid #1f2a38; /* Dark mode scrollbar track */
+      }
+    </style>
+    <title>Movies</title>
+  </head>
+  <body class="font-poppins">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
