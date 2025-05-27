@@ -10,6 +10,7 @@ import {
     FaLinkedin as LinkedinIcon
   } from 'react-icons/fa';
 import { Form, useNavigation } from 'react-router-dom';
+import { Bottom } from '../components/UI/bottum';
 
 
   export const contactData = async ({ request }) => {
@@ -41,7 +42,7 @@ const Contact = () => {
       {/* Hero Section with Overlay */}
       <section className="relative mx-4 lg:h-[60vh] overflow-hidden rounded-b-lg shadow-lg">
         <img
-          src="src\assets\contact0.jpg"
+          src="/contact0.jpg"
           alt="Contact Us"
           className="w-full h-full object-cover"
           loading="eager"
@@ -184,8 +185,11 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <Bottom />
     </div>
+   
   );
+   
 };
 
 // Reusable Contact Info Card Component

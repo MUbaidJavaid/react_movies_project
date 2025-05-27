@@ -95,6 +95,7 @@ export const AppLayout = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Movies', path: '/movies' },
+    { name: 'Movies_', path: '/moviepage' },
     { name: 'Contact', path: '/contact' }
   ];
 

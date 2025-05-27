@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-
+import { Bottom } from "./bottum.jsx";
 export const MoviesDetails = () => {
     const movieDetails = useLoaderData();
       console.log(movieDetails);
@@ -64,6 +64,7 @@ export const MoviesDetails = () => {
                 )}
               </section>
             </div>
+            <Bottom />
           </article>
         );
       };

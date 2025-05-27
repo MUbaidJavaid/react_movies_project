@@ -1,5 +1,6 @@
 import { Heart, PlayCircle, Star } from "lucide-react";
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export const MovieCard = React.forwardRef(({ movie, inWatchlist, onWatchlistToggle, onPlayTrailer, darkMode }, ref) => {
     const [imageLoaded, setImageLoaded] = useState(false);
@@ -74,16 +75,18 @@ export const MovieCard = React.forwardRef(({ movie, inWatchlist, onWatchlistTogg
               {movie.Runtime ? movie.Runtime.split(' ')[0] : 'N/A'} min
             </span>
           </div>
-          <button
-            className={`w-full text-xs md:text-sm py-2 rounded font-medium transition-colors ${
-              darkMode 
-                ? 'bg-yellow-500 hover:bg-yellow-400 text-gray-900'
-                : 'bg-yellow-600 hover:bg-yellow-500 text-white'
-            }`}
-            aria-label={`Watch ${movie.Title}`}
-          >
-            Watch Now
-          </button>
+          <NavLink to={`/movie/${movie.imdbID}`}>
+            <button
+              className={`w-full text-xs md:text-sm py-2 rounded font-medium transition-colors ${
+                darkMode 
+                  ? 'bg-yellow-500 hover:bg-yellow-400 text-gray-900'
+                  : 'bg-yellow-600 hover:bg-yellow-500 text-white'
+              }`}
+              aria-label={`Watch ${movie.Title}`}
+            >
+              Watch Now
+            </button>
+          </NavLink>
         </div>
       </div>
     );
