@@ -141,7 +141,9 @@ export const AppLayout = () => {
         }}
       />
 
-      <Footer />
+      <Footer 
+       darkMode={darkMode}
+      />
     </>
   );
 };

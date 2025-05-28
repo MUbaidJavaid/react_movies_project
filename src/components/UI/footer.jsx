@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-export const Footer = () => {
+export const Footer = ({darkMode}) => {
 
-      const [isDarkMode, setIsDarkMode] = useState(true);
+    //   const [isDarkMode, setIsDarkMode] = useState(true);
 
     //   const toggleDarkMode = () => {
     //     setIsDarkMode(!isDarkMode);
@@ -11,10 +11,10 @@ export const Footer = () => {
 
     return (
 
-              <footer className={`py-8 mb-20 px-6 ${isDarkMode ? 'bg-gray-900 text-gray-300' : 'bg-gray-100 text-gray-700'}`}>
+              <footer className={`py-8 mb-20 px-6 ${darkMode ? 'bg-gray-900 text-gray-300' : 'bg-gray-100 text-gray-700'}`}>
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="mb-4 md:mb-0">
-                        <h2 className={`text-xl font-bold ${isDarkMode ? 'text-yellow-500' : 'text-gray-900'}`}>MovieFlix</h2>
+                        <h2 className={`text-xl font-bold ${darkMode ? 'text-yellow-500' : 'text-gray-900'}`}>MovieFlix</h2>
                         <p className="text-sm mt-1">© 2025 MovieFlix. All rights reserved.</p>
                         </div>
                         <div className="flex space-x-6">

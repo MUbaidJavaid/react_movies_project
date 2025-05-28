@@ -1,4 +1,5 @@
 import { Film, Search, Calendar, Star, Heart, X, Sun, Moon, PlayCircle, Filter, ChevronDown } from 'lucide-react';
+import { useState } from 'react';
 // import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -53,7 +54,7 @@ const Header = ({darkMode ,setDarkMode , movies,navItems , searchTerm ,setSearch
   // const toggleDarkMode = () => {
   //   setIsDarkMode(!isDarkMode);
   // };
-
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
           <>
             <header className={`sticky top-0 z-10 px-4 py-3 shadow-md ${darkMode ? 'bg-gray-900 text-gray-100' : 'bg-gray-100 text-gray-900'}`}>
@@ -179,18 +180,43 @@ const Header = ({darkMode ,setDarkMode , movies,navItems , searchTerm ,setSearch
                     </select>
                   </div>
                   {/* Additional filters would go here */}
-                </div>
-              )}
-            </div>
-            
-            <div className="text-sm">
-              <span>Showing {movies.length} movies</span>
-            </div>
-          </div>
+                          </div>
+                          )}
+                        </div>
+                        
+                        <div className="text-sm">
+                          <span>Showing {movies.length} movies</span>
+                        </div>
+                        </div>
         </div>
 
-      </>
+                      {/* Mobile menu toggle button */}
+                      <div className="md:hidden flex justify-end px-4 py-2">
+                        <button
+                        onClick={() => setIsMenuOpen?.(prev => !prev)}
+                        className={`p-2 rounded-full ${darkMode ? 'bg-gray-700 text-gray-100' : 'bg-gray-200 text-gray-900'}`}
+                        aria-label="Toggle navigation"
+                        >
+                        <ChevronDown size={22} className={`${isMenuOpen ? 'rotate-180' : ''} transition-transform`} />
+                        </button>
+                      </div>
 
+                      {/* Mobile nav menu */}
+                      {isMenuOpen && (
+                        <nav className="md:hidden flex flex-col items-center space-y-2 pb-4">
+                        {navItems.map((item) => (
+                          <NavLink
+                          key={item.path}
+                          to={item.path}
+                          className={`font-medium w-full text-center py-2 rounded ${darkMode ? 'bg-gray-900 text-gray-100' : 'bg-gray-100 text-gray-900'}`}
+                          onClick={() => setIsMenuOpen?.(false)}
+                          >
+                          {item.name}
+                          </NavLink>
+                        ))}
+                        </nav>
+                      )}
+</>
   //   <div className={` ${isDarkMode ? 'bg-black' : 'bg-gray-100'}`}>
   //   {/* Header */}
   //   <header className={`py-4 px-6 flex justify-between items-center ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
