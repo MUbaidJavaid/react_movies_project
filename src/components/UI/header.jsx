@@ -188,7 +188,7 @@ const Header = ({darkMode ,setDarkMode , movies,navItems , searchTerm ,setSearch
                           <span>Showing {movies.length} movies</span>
                         </div>
                         </div>
-        </div>
+                 </div>
 
                       {/* Mobile menu toggle button */}
                       <div className="md:hidden flex justify-end px-4 py-2">
